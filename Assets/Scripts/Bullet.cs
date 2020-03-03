@@ -5,17 +5,21 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    Vector3 origin;
+    float distance;
     
     // Start is called before the first frame update
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        origin = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.magnitude > 1000.0f)
+        distance = (transform.position - origin).magnitude;
+        if (distance > 25.0f)
         {
             Destroy(gameObject);
         }
