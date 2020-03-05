@@ -23,8 +23,29 @@ public class MCController : MonoBehaviour
 
         Vector2 move = new Vector2(horizontal, vertical);
 
+        if (!Mathf.Approximately(move.x,0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x,move.y);
+            lookDirection.Normalize();
+        }
+
         Vector2 position = rigidbody2d.position;
         position = position + move * speed * Time.deltaTime;
         rigidbody2d.MovePosition(position);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Debug.Log(lookDirection);
+            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position, lookDirection, 1f, LayerMask.GetMask("Interactable"));
+            if (hit.transform != null)
+            {
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                if (interactable != null)
+                {
+                    Debug.Log("Found interactable");
+                    interactable.OnFocused(transform);
+                }
+            }
+        }
     }
 }
