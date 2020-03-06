@@ -1,0 +1,13 @@
+Items
+    Diaries?
+    Flashlight:default
+Environments
+    Doors
+    Collidable objects
+Enemies
+    Behaviour
+    Attack type
+NPCs
+    Dialogue
+    Options?
+Story delivery

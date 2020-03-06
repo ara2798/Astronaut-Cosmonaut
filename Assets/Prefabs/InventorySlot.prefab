@@ -116,7 +116,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479310121786928177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781561572897575569}
+        m_MethodName: onRemoveButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &479310121939202431
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +245,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 479310121939202176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1781561572897575569}
+        m_MethodName: UseItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &479310122058180124
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479310122058180127}
+  - component: {fileID: 1781561572897575569}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -272,6 +295,20 @@ RectTransform:
   m_AnchoredPosition: {x: 25, y: 7}
   m_SizeDelta: {x: 197.9, y: 194.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1781561572897575569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479310122058180124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c4794c4f5564d47949c947f39a3460, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 479310122774821948}
+  removeButton: {fileID: 479310121786928174}
 --- !u!1 &479310122774821946
 GameObject:
   m_ObjectHideFlags: 0
