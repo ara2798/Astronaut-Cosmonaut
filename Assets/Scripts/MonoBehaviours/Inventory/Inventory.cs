@@ -24,6 +24,7 @@ public class Inventory : MonoBehaviour
     public OnItemChanged onItemChangedCallback;
     public int space = 6;
     public List<Item> items = new List<Item>();
+    public List<Item> defaultItems = new List<Item>();
 
     public bool Add(Item item)
     {
@@ -39,6 +40,10 @@ public class Inventory : MonoBehaviour
             {
                 onItemChangedCallback.Invoke();
             }
+        } else
+        {
+            defaultItems.Add(item);
+            // Activate defaul item
         }
         return true;
     }

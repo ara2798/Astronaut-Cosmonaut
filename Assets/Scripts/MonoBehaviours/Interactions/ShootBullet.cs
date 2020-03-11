@@ -20,26 +20,29 @@ public class ShootBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Time.timeScale > 0f)
         {
-            onClick = true;
-            aimRay.enabled = true;
-        }
-        if (onClick)
-        {
-            aimRay.SetPosition(0, transform.position);
-            mouseVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mouseVector.z = 0.0f;
-            rayDirection = transform.position - mouseVector;
-            rayDirection.Normalize();
-            rayDirection *= rayLength;
-            aimRay.SetPosition(1, transform.position + rayDirection);
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            onClick = false;
-            aimRay.enabled = false;
-            Shoot();
+            if (Input.GetMouseButtonDown(0))
+            {
+                onClick = true;
+                aimRay.enabled = true;
+            }
+            if (onClick)
+            {
+                aimRay.SetPosition(0, transform.position);
+                mouseVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                mouseVector.z = 0.0f;
+                rayDirection = transform.position - mouseVector;
+                rayDirection.Normalize();
+                rayDirection *= rayLength;
+                aimRay.SetPosition(1, transform.position + rayDirection);
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                onClick = false;
+                aimRay.enabled = false;
+                Shoot();
+            }
         }
     }
 
