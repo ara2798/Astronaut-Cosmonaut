@@ -5,14 +5,17 @@ using UnityEngine;
 public class MCController : MonoBehaviour
 {
     public float speed = 10.0f;
-
-    Rigidbody2D rigidbody2d;
     Vector2 lookDirection = new Vector2(1, 0);
+    
+    Rigidbody2D rigidbody2d;
+    Animator animator;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,6 +31,10 @@ public class MCController : MonoBehaviour
             lookDirection.Set(move.x,move.y);
             lookDirection.Normalize();
         }
+
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
 
         Vector2 position = rigidbody2d.position;
         position = position + move * speed * Time.deltaTime;
