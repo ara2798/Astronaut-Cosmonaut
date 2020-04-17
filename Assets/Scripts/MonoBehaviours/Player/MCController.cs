@@ -43,7 +43,7 @@ public class MCController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Debug.Log(lookDirection);
-            RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position, lookDirection, 1f, LayerMask.GetMask("Interactable"));
+            RaycastHit2D hit = Physics2D.CircleCast(rigidbody2d.position + Vector2.up * 0.8f, 0.6f, lookDirection, 1f, LayerMask.GetMask("Interactable"));
             if (hit.transform != null)
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
