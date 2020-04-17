@@ -29,4 +29,9 @@ public class Bullet : MonoBehaviour
     {
         rigidbody2d.AddForce(direction * force);
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
 }

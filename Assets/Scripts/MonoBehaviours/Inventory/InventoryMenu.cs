@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class InventoryUI : MonoBehaviour
+public class InventoryMenu : MonoBehaviour
 {
     Inventory inventory;
     public Transform primaryItemsParent;
@@ -14,7 +14,7 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         inventory = Inventory.instance;
-        inventory.onItemChangedCallback += UpdateUI;
+        inventory.onItemChangedCallback += UpdateMenu;
         primarySlots = primaryItemsParent.GetComponentsInChildren<InventorySlot>();
         secondarySlots = secondaryItemsParent.GetComponentsInChildren<InventorySlot>();
     }
@@ -22,7 +22,7 @@ public class InventoryUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Inventory"))
+        if (Input.GetButtonDown("Pause"))
         {
             inventoryUI.SetActive(!inventoryUI.activeSelf);
             if (gameIsPaused)
@@ -35,9 +35,9 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    void UpdateUI()
+    void UpdateMenu()
     {
-        Debug.Log("UPDATING UI");
+        Debug.Log("UPDATING INVENTORY MENU");
         for (int i = 0; i < primarySlots.Length; i++)
         {
             if (i < inventory.items.Count)

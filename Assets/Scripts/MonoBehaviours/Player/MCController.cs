@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MCController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speed = 6.0f;
     Vector2 lookDirection = new Vector2(1, 0);
     
     Rigidbody2D rigidbody2d;

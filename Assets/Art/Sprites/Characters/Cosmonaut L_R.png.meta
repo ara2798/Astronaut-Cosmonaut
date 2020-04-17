@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: d0a66016573b87c4bac49890e41fcc80
+guid: 01551d6c2357a854ba88ace32bdbf874
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5776732889596564897
-    second: Astronaut Down_0
+      213: -3596265983153229931
+    second: Cosmonaut L_R_0
   - first:
-      213: -1951580123316517666
-    second: Astronaut Down_1
+      213: -3806505399651895933
+    second: Cosmonaut L_R_1
   - first:
-      213: 3996159550789422118
-    second: Astronaut Down_2
+      213: 1652139316939943359
+    second: Cosmonaut L_R_2
   - first:
-      213: 6799677559261790625
-    second: Astronaut Down_3
+      213: 3363534881996140059
+    second: Cosmonaut L_R_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -55,8 +55,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.2}
   spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astronaut Down_0
+      name: Cosmonaut L_R_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ae7491b0ce4dfa0800000000000000
-      internalID: -5776732889596564897
+      spriteID: 59fa454642f771ec0800000000000000
+      internalID: -3596265983153229931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_1
+      name: Cosmonaut L_R_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed4810fb7389ae4e0800000000000000
-      internalID: -1951580123316517666
+      spriteID: 385742ab1839c2bc0800000000000000
+      internalID: -3806505399651895933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_2
+      name: Cosmonaut L_R_2
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c869a50f5357730800000000000000
-      internalID: 3996159550789422118
+      spriteID: fbd69a194f39de610800000000000000
+      internalID: 1652139316939943359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_3
+      name: Cosmonaut L_R_3
       rect:
         serializedVersion: 2
         x: 32
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a18ef2c6be4d5e50800000000000000
-      internalID: 6799677559261790625
+      spriteID: b1ee307872dadae20800000000000000
+      internalID: 3363534881996140059
       vertices: []
       indices: 
       edges: []

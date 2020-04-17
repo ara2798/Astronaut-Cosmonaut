@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: d0a66016573b87c4bac49890e41fcc80
+guid: ffcd92b5da305b64989da5f62bf34a3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5776732889596564897
-    second: Astronaut Down_0
+      213: 1019418500342426404
+    second: Enemy L_R_0
   - first:
-      213: -1951580123316517666
-    second: Astronaut Down_1
+      213: 6247131115341829900
+    second: Enemy L_R_1
   - first:
-      213: 3996159550789422118
-    second: Astronaut Down_2
+      213: 9174839710680494973
+    second: Enemy L_R_2
   - first:
-      213: 6799677559261790625
-    second: Astronaut Down_3
+      213: 6039923150770449036
+    second: Enemy L_R_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,85 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Astronaut Down_0
+      name: Enemy L_R_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 128
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ae7491b0ce4dfa0800000000000000
-      internalID: -5776732889596564897
+      spriteID: 42b2f5699b3b52e00800000000000000
+      internalID: 1019418500342426404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_1
+      name: Enemy L_R_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed4810fb7389ae4e0800000000000000
-      internalID: -1951580123316517666
+      spriteID: c075d3396a442b650800000000000000
+      internalID: 6247131115341829900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_2
+      name: Enemy L_R_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62c869a50f5357730800000000000000
-      internalID: 3996159550789422118
+      spriteID: d7332424b14935f70800000000000000
+      internalID: 9174839710680494973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Astronaut Down_3
+      name: Enemy L_R_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
-        width: 32
-        height: 32
+        width: 128
+        height: 128
       alignment: 9
-      pivot: {x: 0.5, y: 0.2}
+      pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a18ef2c6be4d5e50800000000000000
-      internalID: 6799677559261790625
+      spriteID: c8aa450da1e12d350800000000000000
+      internalID: 6039923150770449036
       vertices: []
       indices: 
       edges: []
