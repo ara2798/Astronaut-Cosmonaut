@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MCController : MonoBehaviour
@@ -53,6 +54,11 @@ public class MCController : MonoBehaviour
                     interactable.OnFocused(transform);
                 }
             }
+        }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

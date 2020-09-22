@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Reception.unity
+    guid: f2b15b4dcc86eee438eb034621fa9f33
+  - enabled: 1
+    path: Assets/Scenes/SurgeryRoom.unity
+    guid: 74bfeb8d758ddc04393a9553e3a08647
+  - enabled: 1
+    path: Assets/Scenes/RecoveryRoom.unity
+    guid: ecd48858bb994b1478bb59122d86c5ae
+  - enabled: 1
+    path: Assets/Scenes/PlantRowsRoom.unity
+    guid: d894d876b8b9ab044be6179861402d81
+  - enabled: 1
+    path: Assets/Scenes/BigTreeRoom.unity
+    guid: 64f2119aab6c38e4ab2141d9ee17b4fc
+  - enabled: 1
+    path: Assets/Scenes/FountainRoom.unity
+    guid: 35160f6f700dca24fa3397359f86ab52
+  - enabled: 1
     path: Assets/Scenes/UpperRing.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
